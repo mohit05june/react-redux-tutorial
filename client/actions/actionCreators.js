@@ -28,3 +28,12 @@ export function increment(index) {
     }
   }
   
+  // store last location
+  
+  export function lastLocation(path) {
+    console.log("action creator -- lastLocation", path);
+    return {
+      type: 'LAST_lOCATION',
+      path
+    }
+  }
